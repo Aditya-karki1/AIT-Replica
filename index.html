@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Sidebar Example</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/04a5942002.js" crossorigin="anonymous"></script>
+
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar">
+            <div class="position-sticky">
+                <div class="spotify">
+                    <i class="fab fa-spotify fa-2x"></i>
+                    <span class="spotify-text">Spotify</span>
+                </div>
+                <div class="link-section-1">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="fas fa-home"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-search"></i>
+                                Search
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-book"></i>
+                                Your Library
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="link-section-2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <img src="Images/add-button.png" id="icon">
+                                Create Playlist
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="Images/heart.png"  id="icon">
+                                Liked Songs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="Images/streaming.png" id="icon">
+                                Your Episodes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-content">
+            <div class="container mt-5 search">
+                <form class="form-inline">
+                    <div class="input-group search-bar rounded-pill">
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text search-icon ">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Artists,songs,or podcast" aria-label="Search" aria-describedby="search-icon">
+                    </div>
+                </form>
+            </div>
+
+            <h4>Your top genres</h4>
+            <div class="main-section1">
+                <div class="main-container-box-1">
+                    Pop
+                </div>
+                <div class="main-container-box-2">
+                    Hip-Hop
+                </div>
+            </div>
+            <h4>Browse All</h4>
+            <div class="main-section2">
+                <div class="main-container-box-1">
+                    Podcast
+                </div>
+                <div class="main-container-box-2">
+                    Made For You
+                </div>
+                <div class="main-container-box-3">
+                    Charts
+                </div>
+                <div class="main-container-box-4">
+                    New Release
+                </div>
+            </div>
+           
+        </main>
+        
+    </div>
+</div>
+
+<div class="bottom-container">
+    <div class="details">
+        <img src="Images/star-boy.png" id="track-img">
+        <span class="track-name"> Starboy</span>
+        <img src="Images/green-love.png" id="like">
+    </div>
+    <div class="player">
+    
+    <div class="buttons">
+        <div class="prev-track">
+          <i class="fa fa-step-backward "></i>
+        </div>
+        <div class="playpause-track" >
+          <i class="fa fa-play-circle fa-2x"></i>
+        </div>
+        <div class="next-track" >
+          <i class="fa fa-step-forward "></i>
+        </div>
+      </div>
+   
+
+      <div class="slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100"
+          value="0" class="seek_slider" >
+        <div class="total-duration">02:00</div>
+      </div>
+    </div>
+    </div>
+   
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
